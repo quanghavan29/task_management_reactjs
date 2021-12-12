@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.css'
 
-export default function Header() {
+export default function Header(props) {
     return (
         <div>
             <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -18,6 +18,9 @@ export default function Header() {
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/contact" activeClassName="activeNavItem">Contact</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/login" activeClassName="activeNavItem">Login</NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="home" id="dropdownId" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
