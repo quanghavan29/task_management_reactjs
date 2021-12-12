@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Prompt } from 'react-router-dom';
 
 export default function Login(props) {
 
@@ -44,6 +45,9 @@ export default function Login(props) {
             <div className="form-group">
                 <button className="btn btn-primary">Login</button>
             </div>
+            <Prompt when={true} message={(location) => {
+                return "Do you want leave this page?";
+            }}/>
         </form>
     )
 }
