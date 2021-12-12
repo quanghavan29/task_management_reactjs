@@ -22,10 +22,13 @@ export default function Header(props) {
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/login" activeClassName="activeNavItem">Login</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/detail" activeClassName="activeNavItem">Detail</NavLink>
+                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="home" id="dropdownId" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
-                                <a className="dropdown-item" href="home">Action 1</a>
+                                <a className="dropdown-item" href="/detail">Detail</a>
                                 <a className="dropdown-item" href="home">Action 2</a>
                             </div>
                         </li>
