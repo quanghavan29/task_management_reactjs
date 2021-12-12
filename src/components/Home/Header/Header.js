@@ -1,21 +1,23 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import './Header.css'
 
 export default function Header() {
     return (
         <div>
-            <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
-                <a className="navbar-brand" href="/home">Navbar</a>
+            <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+                <NavLink className="navbar-brand" to="/home">Navbar</NavLink>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" />
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/home">Home <span className="sr-only">(current)</span></a>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/home" activeClassName="activeNavItem">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
+                            <NavLink className="nav-link" to="/about" activeClassName="activeNavItem">About</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/contact">Contact</a>
+                            <NavLink className="nav-link" to="/contact" activeClassName="activeNavItem">Contact</NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="home" id="dropdownId" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
