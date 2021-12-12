@@ -7,6 +7,7 @@ import Header from './components/Home/Header/Header';
 import Login from './pages/Login/Login';
 import Detail from './pages/Detail/Detail';
 import NotFound from './pages/NotFound/NotFound';
+import Profile from './pages/Profile/Profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path='/login' component={Login} />
         <Route exact path='/detail/:id' component={Detail} />
         <Route exact path='/login' component={Login} />
+        <Route exact path='/profile' component={Profile} />
         <Route path='*' component={NotFound} />
       </Switch>
     </BrowserRouter>

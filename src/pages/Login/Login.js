@@ -14,11 +14,16 @@ export default function Login(props) {
     const handleLogin = (event) => {
         event.preventDefault();
         if (userLogin.username === 'admin' && userLogin.password === '123') {
-            // back to preveious page
-            // props.history.goBack();
 
             // props.history.push('/home');
-            props.history.replace('/home');
+
+            // save userLogin to localStorage
+            localStorage.setItem('userLogin', JSON.stringify(userLogin));
+
+            // back to preveious page
+            props.history.goBack();
+
+            // props.history.replace('/home');
         } else {
             alert('Login Fail!');
             return;
