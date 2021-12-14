@@ -31,7 +31,9 @@ export default function Header(props) {
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="home" id="dropdownId" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
-                                <a className="dropdown-item" href="home">Action 2</a>
+                                <NavLink className="dropdown-item" to="/todolist-rcc" activeClassName="activeNavItem">ToDoList RCC</NavLink>
+                                <NavLink className="dropdown-item" to="/todolist-rfc" activeClassName="activeNavItem">ToDoList RFC</NavLink>
+                                <NavLink className="dropdown-item" to="/todolist-saga" activeClassName="activeNavItem">ToDoList Saga</NavLink>
                             </div>
                         </li>
                     </ul>

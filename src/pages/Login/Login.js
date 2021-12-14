@@ -47,7 +47,7 @@ export default function Login(props) {
             </div>
             <Prompt when={true} message={(location) => {
                 return "Do you want leave this page?";
-            }}/>
+            }} />
         </form>
     )
 }
